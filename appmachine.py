@@ -8,6 +8,6 @@ def index():
     df=pd.read_excel('data.xlsx')
 
     table_html = df.to_html(index=False)
-    return render_template('Handmade.html',table=table_html)
+    return render_template('Machine.html',table=table_html)
 if __name__ == '__main__':
     app.run(debug=True)

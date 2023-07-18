@@ -5,7 +5,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    df=pd.read_excel('data.xlsx')
+    df=pd.read_excel('Machine data.xlsx')
 
     table_html = df.to_html(index=False)
     return render_template('Machine.html',table=table_html)
